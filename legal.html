@@ -318,7 +318,7 @@
             <li><strong>Account restrictions and appeals:</strong> kept while the account exists. If you delete an account that has strikes, the strike count, linked only to a one-way hash of the phone number (not the number, your name, or any content), is kept for 90 days, so a new account made with the same phone number starts with those strikes. If the account was suspended for a fake profile, the reason and the profile name and photo reference it was judged on are kept the same way for 90 days, with the same right to appeal. An account that was taken down can still delete its data from the app.</li>
             <li><strong>Sealed uploader records:</strong> for public photos and videos, kept as long as needed for the purposes in II.3, including after the account is deleted (they then name an account that no longer exists); for friends-only and private pins, about 48 to 72 hours, unless the item is preserved as child-safety evidence.</li>
             <li><strong>Live location record:</strong> deleted after 48 hours without an update.</li>
-            <li><strong>Preserved child-safety evidence:</strong> kept for the period the law requires (currently one year from detection or from our report to NCMEC), then deleted. Every access to that evidence is recorded in an access log.</li>
+            <li><strong>Preserved child-safety evidence:</strong> kept for the period the law requires (currently one year from detection or from our report to NCMEC), then deleted. Every access to it through WTM's software and admin console is recorded in an access log.</li>
             <li>We keep other data only as long as needed for the purposes above or as the law requires.</li>
           </ul>
           <h4>II.8 Sensitive data and minors</h4>
@@ -380,10 +380,10 @@
           <h4>3. What happens when apparent CSAM is found</h4>
           <ul>
             <li><strong>It is blocked.</strong> It is never published, or it is taken down at once.</li>
-            <li><strong>It is preserved.</strong> An encrypted copy and the facts a report needs (when and where it was posted, and which account posted it) are kept in a locked store that no one at WTM can open or view. No one at WTM views, downloads, forwards, or keeps the material.</li>
+            <li><strong>It is preserved.</strong> An encrypted copy and the facts a report needs (when and where it was posted, and which account posted it) are kept in a store that WTM's app and admin console cannot open. No one at WTM views, downloads, forwards, or keeps the material.</li>
             <li><strong>It is reported.</strong> We report apparent CSAM to the National Center for Missing &amp; Exploited Children (NCMEC) through its CyberTipline, as 18 U.S.C. 2258A requires, and make the preserved copy available to NCMEC and law enforcement on request.</li>
-            <li><strong>The account is suspended.</strong> When a case is confirmed (a match against known abuse images, or our second, stricter check at the confidence we report at), the account that posted it is suspended at once. A lower-confidence flag preserves the item but suspends no one, so a false alarm cannot lock someone out. A person at WTM decides whether a suspension becomes a permanent ban (Terms of Service Section 9).</li>
-            <li><strong>Every access is logged.</strong> Each time preserved evidence is viewed in our admin console, filed, reminded about, or deleted, the access is recorded in an append-only log.</li>
+            <li><strong>The account is suspended.</strong> When a case is confirmed (a match against known abuse images, or our second, stricter check at the confidence we report at), the account that posted it is suspended at once. A lower-confidence flag preserves the item and counts as a strike under our two-strike rule, but does not suspend the account by itself. A person at WTM decides whether a suspension becomes a permanent ban (Terms of Service Section 9).</li>
+            <li><strong>Access is logged.</strong> Each time WTM's software or admin console reads preserved evidence, files it, sends a reminder about it, or deletes it, the access is recorded in an append-only log.</li>
           </ul>
           <h4>4. How long evidence is kept</h4>
           <p>Preserved evidence is kept for the period the law requires (currently one year from detection, or from our report to NCMEC), then deleted automatically. A legal hold or a request from law enforcement can extend that.</p>
